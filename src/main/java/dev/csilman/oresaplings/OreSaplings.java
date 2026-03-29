@@ -1,5 +1,8 @@
 package dev.csilman.oresaplings;
 
+import dev.csilman.oresaplings.block.ModBlocks;
+import dev.csilman.oresaplings.item.ModCreativeModeTabs;
+import dev.csilman.oresaplings.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -48,6 +51,10 @@ public class OreSaplings {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.
@@ -88,7 +95,7 @@ public class OreSaplings {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = OreSaplings.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = OreSaplings.MOD_ID, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
