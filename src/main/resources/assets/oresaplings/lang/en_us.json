@@ -1,4 +1,6 @@
 {
   "itemGroup.oresaplings.ore_saplings_tab": "Ore Saplings Mod",
-  "block.oresaplings.black_opal_block": "Block of Black Opal"
+  "block.oresaplings.black_opal_block": "Block of Black Opal",
+  "block.oresaplings.iron_ore_sapling": "Iron Ore Sapling",
+  "block.oresaplings.iron_ore_log": "Iron Ore Log"
 }

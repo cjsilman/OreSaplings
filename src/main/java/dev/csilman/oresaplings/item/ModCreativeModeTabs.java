@@ -21,6 +21,9 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlocks.BLACK_OPAL_BLOCK))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BLACK_OPAL_BLOCK);
+
+                        output.accept(ModBlocks.IRON_ORE_SAPLING);
+                        output.accept(ModBlocks.IRON_ORE_LOG);
                     })).build());
 
     public static void register(IEventBus eventBus) {

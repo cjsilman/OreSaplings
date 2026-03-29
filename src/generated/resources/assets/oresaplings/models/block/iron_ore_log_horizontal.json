@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "oresaplings:block/iron_ore_log_top",
+    "side": "oresaplings:block/iron_ore_log"
+  }
+}
