@@ -1,0 +1,13 @@
+{
+  "structures": [
+    {
+      "structure": "minecraft:pillager_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "oresaplings:fixed",
+    "chunk_x": 64,
+    "chunk_z": 0
+  }
+}
